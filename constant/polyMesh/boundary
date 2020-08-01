@@ -1,0 +1,106 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1912                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "1e-06/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+12
+(
+    buWall
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          2480;
+        startFace       18500;
+    }
+    blWall
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          1276;
+        startFace       20980;
+    }
+    uWall
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          96;
+        startFace       22256;
+    }
+    outlet
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          64;
+        startFace       22352;
+    }
+    chamberWall
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          96;
+        startFace       22416;
+    }
+    interfaceHT
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          0;
+        startFace       22512;
+    }
+    inlet
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          64;
+        startFace       22512;
+    }
+    fuWall
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          2480;
+        startFace       22576;
+    }
+    iWall
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          72;
+        startFace       25056;
+    }
+    lWall
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          96;
+        startFace       25128;
+    }
+    oWall
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          72;
+        startFace       25224;
+    }
+    flWall
+    {
+        type            wall;
+        physicalType    wall;
+        nFaces          1276;
+        startFace       25296;
+    }
+)
+
+// ************************************************************************* //
